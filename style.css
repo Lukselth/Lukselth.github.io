@@ -1,60 +1,91 @@
-*{
-  box-sizing: border-box;
-  padding: 0;
+body{
+  flex-direction: column;
+}
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.container{
-  z-index: 1;
+.Tela {
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  margin: 0 auto;
   position: relative;
-  display: flex;
-  width: 90%;
-  height: 300px;
-  margin: 20px;
-  flex-flow: column wrap;
-  align-content: center;
-  justify-content: center;
-  border-radius: 10px;
-  box-shadow: 10px 10px 8px black;
-  background: #00FFB0;
+  overflow: hidden;
+  background-color: skyblue ;
 }
 
-.container div{
-  margin: 5px;
-  padding: 10px;
-}
-
-div input{
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 12pt;
-  background: #00D996;
-  color: black;
-  outline: none;
-}
-div input:hover{
-  box-shadow: 2px 4px 9px black;
-}
-div button{
+.pipe{
   position: absolute;
-  top: 80%;
-  left: 40%;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: 10px;
-  background: #ccc;
+  width: 40px;
+  bottom: 0px;
+  animation: pipe 2s infinite linear;
 }
 
-h1{
-  margin-top: -10px; 
-  font-size: 30px;
-  text-align: center;
+@keyframes pipe {
+  from{
+    right: -50px;
+  }
+  to{
+    right: 100%;
+  }
 }
 
-#texto{
-  position:absolute;
-  z-index: 100;
-  text-align: center;
-  margin-left: 9%;
+.mario{
+  position: absolute;
+  width: 70px;
+  bottom: 0;
+  
 }
+.jump{
+  animation: jump 1s;
+}
+@keyframes jump  {
+  
+
+  0%{
+    bottom: 0;
+  }
+  40%{
+    bottom: 150px;
+  }
+  50%{
+    bottom: 120px;
+  }
+  60%{
+    bottom: 120px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.nuvens{
+  position: absolute;
+  width: 300px;
+  margin-top: 0;
+  animation: nuvemanm 3s infinite linear;
+}
+
+@keyframes nuvemanm {
+  from{
+    right: -300px;
+  }
+  to{
+    right: 100%;
+  }
+   }
+   .botao{
+     width: 50px;
+     height: 50px;
+     background: black;
+     position: absolute;
+     bottom: 0;
+     right: 160px;
+     top: 500px;
+     border-radius: 10px;
+   }
+   .botao:hover{
+     background: #000222;
+   }

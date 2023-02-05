@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Page Login</title>
+  <title>Jogo do Mario</title>
+  
+  <!-- HTML -->
+  
 
-
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Login</h1>
-    <div>
-      <form>
-      <input required style="color: black" type="text" id="nomeInput" placeholder="Nome">
-      </form>
-    </div>
-    <p id="texto"></p>
-    <div>
-      <form>
-      <input style="color: black" required type="email" id="emailInput" placeholder="Email">
-       <div>
-    <button onclick="cadastro()" class="botao" type="submit">Login</button>
-    </div>
-      </form>
-    </div>
+  <div class="Tela" onclick="qclick()">
+    <img src="pipe.png"class="pipe">
+    <img src="mario.gif" class="mario">
+    <img src="clouds.png" class="nuvens">
    
   </div>
-
-
+  <div id="cor" onclick="back()" class="botao">
+    
+  </div>
+ <script type="text/javascript" src="cdn_modules/prettier@2.8.0/parser-html.js"></script>
+  
   <script src="main.js"></script>
 </body>
-
 </html>
