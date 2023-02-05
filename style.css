@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  z-index: 1;
+  position: relative;
+  display: flex;
+  width: 90%;
+  height: 300px;
+  margin: 20px;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px black;
+  background: #00FFB0;
+}
+
+.container div{
+  margin: 5px;
+  padding: 10px;
+}
+
+div input{
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 12pt;
+  background: #00D996;
+  color: black;
+  outline: none;
+}
+div input:hover{
+  box-shadow: 2px 4px 9px black;
+}
+div button{
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 10px;
+  background: #ccc;
+}
+
+h1{
+  margin-top: -10px; 
+  font-size: 30px;
+  text-align: center;
+}
+
+#texto{
+  position:absolute;
+  z-index: 100;
+  text-align: center;
+  margin-left: 9%;
+}
