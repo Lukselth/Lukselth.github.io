@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #C8C8C8;
+}
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  background: gainsboro;
+  width: 90%;
+  padding-top: 20px;
+  margin: auto auto;
+  border-radius: 10px;
+}
+
+.inputArea{
+  height: 50px;
+  font-size: 1rem;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 6px;
+  font-weight: bold;
+  outline-color: black;
+}
+
+.add{
+  width: 30%;
+  height: 40px;
+  border: none;
+  background: #00FF18;
+  border-radius: 5px;
+  margin: auto auto;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.mdil-arrow-left{
+  font-size: 2rem;
+}
