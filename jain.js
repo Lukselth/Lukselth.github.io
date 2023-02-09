@@ -1,12 +1,22 @@
-let inputNome = document.getElementById("inputNome");
-let inputEmail = document.getElementById('inputEmail');
+let inputName = document.getElementById("inputNome");
+let inputEmail = document.getElementById("inputEmail");
+  
 function verificaInput(){
-  if((inputNome !== "") && (inputNome !== null) && (inputNome !== undefined)){
-    inputNome.value = "";
+  
+localStorage.setItem("nome", inputName.value);
+localStorage.setItem("email", inputEmail.value);
+  let names =+ localStorage.getItem("nome");
+  let emails =+ localStorage.getItem("email")
+  console.log(names,emails);
+  
+  if((inputName !== "") && (inputName !== null) && (inputName !== undefined)){
+    inputName.value = "";
   }
- if((inputEmail !== "") && (inputNome !== null) && (inputEmail !== undefined)){
+ if((inputEmail !== "") && (inputEmail !== null) && (inputEmail !== undefined)){
    inputEmail.value = "";
  }
-localStorage.setItem("Nome",inputNome);
+ 
+
 }
 
+  
